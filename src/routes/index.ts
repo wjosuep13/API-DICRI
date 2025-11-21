@@ -1,0 +1,11 @@
+import { Router } from "express";
+import authRoutes from "./auth.routes";
+import expedientRoutes from "./expedient.routes";
+import indicioRoutes from "./indicio.routes";
+import estado from "./estado.route";
+const router = Router();
+router.use("/auth", authRoutes);
+router.use("/expedient", expedientRoutes);
+router.use("/indicio", indicioRoutes);
+router.use("/estados", estado);
+export default router;
